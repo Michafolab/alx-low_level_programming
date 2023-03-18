@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Determines either greater than 5, is less than 6, or is 0
+ * main - Determines if a number is positive, negative or zero.
  *
  * Return: Always 0 (Success)
  */
-	
+		
