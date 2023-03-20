@@ -1,53 +1,48 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main -Entry point
- *
- * Description: prints all possible combinations of two two-digit numbers.
+ * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	int d1 = 0, d2, d3, d4;
+int i, e, g, h, op1, op2;
 
-	while (d1 <= 9)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		d2 = 0;
-		while (d2 <= 9)
+		e = 48;
+		while (e < 58)
 		{
-			d3 = 0;
-			while (d3 <= d4)
+			i = 48;
+			while (i < 58)
 			{
-				d4 = 0;
-				while (d4 <= 9)
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					if ((d1 == d2) || (d1 < d2))
-					{
-					putchar(d1 + 48);
-					putchar(d2 + 48);
+					putchar(h);
+					putchar(g);
 					putchar(' ');
-					if ((d1 + d2) < (d3 + d4))
-					{
-					putchar(d3 + 48);
-					putchar(d4 + 48);
-					if ((d1 + d2 + d3 + d4) != 35)
-					{
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
 					putchar(',');
 					putchar(' ');
-					}
-					}
-					}
-					d4++;
 				}
-				d3++;
+				i++;
 			}
-			d2++;
+			e++;
 		}
-		d1++;
+		g++;
 	}
-	putchar('\n');
-
+	h++;
+}
+putchar('\n');
 return (0);
 }
