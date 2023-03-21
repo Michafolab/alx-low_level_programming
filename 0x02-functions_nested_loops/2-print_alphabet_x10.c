@@ -2,20 +2,19 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_alphabet_x10 - Prints the alphabet 10 times.
+ * print_alphabet - Entry point
  *
- * Return: Always 0 (Success)
- */
-void print_alphabet_x10(void)
+ * Description: prints the alphabets in lowercase
+ *
+ * Return: void
+*/
+void print_alphabet(void)
 {
-	int a, b;
+	int i;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 97 ; i < 123 ; i++)
 	{
-		for (b = 97; b <= 122; b++)
-		{
-			_putchar(b);
-		}
-	_putchar('\n');
+		_putchar(i);
 	}
+	_putchar('\n');
 }
