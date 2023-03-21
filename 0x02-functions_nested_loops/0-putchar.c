@@ -15,4 +15,4 @@ int main(void)
 	write(1, &c, 8);
 	putchar('\n');
 	return (0);
-}}
+}
