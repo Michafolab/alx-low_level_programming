@@ -1,44 +1,44 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
- * argstostr - concatenates all the arguments of a program.
- * @ac: argument count.
- * @av: argument vector.
- *
- * Return: pointer of an array of char
+ * _strlen_recursion - returns the length of a string.
+ * @s: string
+ * Return: the length of a string.
  */
-char *argstostr(int ac, char **av)
+int _strlen_recursion(char *s)
 {
-	char *aout;
-	int c, i, j, ia;
-	if (ac == 0)
-		return (NULL);
-	for (c = i = 0; i < ac; i++)
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
+}
+
+/**
+ * comparator - compares each character of the string.
+ * @s: string
+ * @n1: smallest iterator.
+ * @n2: biggest iterator.
+ * Return: .
+ */
+int comparator(char *s, int n1, int n2)
+{
+	if (*(s + n1) == *(s + n2))
 	{
-		if (av[i] == NULL)
-			return (NULL);
-		for (j = 0; av[i][j] != '\0'; j++)
-			c++;
-		c++;
+		if (n1 == n2 || n1 == n2 + 1)
+			return (1);
+		return (0 + comparator(s, n1 + 1, n2 - 1));
 	}
-	aout = malloc((c + 1) * sizeof(char));
-	if (aout == NULL)
-	{
-		free(aout);
-		return (NULL);
-	}
-	for (i = j = ia = 0; ia < c; j++, ia++)
-	{
-		if (av[i][j] == '\0')
-		{
-			aout[ia] = '\n';
-			i++;
-			ia++;
-			j = 0;
-		}
-		if (ia < c - 1)
-			aout[ia] = av[i][j];
-	}
-	aout[ia] = '\0';
-	return (aout);
+	return (0);
+}
+
+/**
+ * is_palindrome - detects if a string is a palindrome.
+ * @s: string.
+ * Return: 1 if s is a palindrome, 0 if not.
+ */
+int is_palindrome(char *s)
+{
+	if (*s == '\0')
+		return (1);
+	return (comparator(s, 0, _strlen_recursion(s) - 1));
 }
