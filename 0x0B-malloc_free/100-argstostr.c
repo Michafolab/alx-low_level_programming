@@ -1,53 +1,40 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * ch_free_grid - frees a 2 dimensional array.
- * @grid: multidimensional array of char.
- * @height: height of the array.
- *
- * Return: no return
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
  */
-void ch_free_grid(char **grid, unsigned int height)
+char *argstostr(int ac, char **av)
 {
-	if (grid != NULL && height != 0)
+	int i, n, r = 0, l = 0;
+	char *str;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
 	{
-		for (; height > 0; height--)
-			free(grid[height]);
-		free(grid[height]);
-		free(grid);
+		for (n = 0; av[i][n]; n++)
+			l++;
 	}
+	l += ac;
+
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+	for (n = 0; av[i][n]; n++)
+	{
+		str[r] = av[i][n];
+		r++;
+	}
+	if (str[r] == '\0')
+	{
+		str[r++] = '\n';
+	}
+	}
+	return (str);
 }
-/**
- * strtow - splits a string into words.
- * @str: string.
- *
- * Return: pointer of an array of integers
- */
-char **strtow(char *str)
-{
-	char **aout;
-	unsigned int c, height, i, j, a1;
-	if (str == NULL || *str == '\0')
-		return (NULL);
-	for (c = height = 0; str[c] != '\0'; c++)
-		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
-			height++;
-	aout = malloc((height + 1) * sizeof(char *));
-	if (aout == NULL || height == 0)
-	{
-		free(aout);
-		return (NULL);
-	}
-	for (i = a1 = 0; i < height; i++)
-	{
-		for (c = a1; str[c] != '\0'; c++)
-		{
-	@@ -58,8 +58,7 @@ char **strtow(char *str)
-				break;
-			}
-		}
-		for (j = 0; a1 <= c; a1++, j++)
-			aout[i][j] = str[a1];
-		aout[i][j] = '\0';
-	}
-	
