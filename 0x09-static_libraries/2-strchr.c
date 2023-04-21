@@ -18,5 +18,3 @@ char *_strchr(char *s, char c)
 	}
 	return (0);
 }
- BIN +1.42 KB 
-0x09-static_libraries/2-strchr.o
