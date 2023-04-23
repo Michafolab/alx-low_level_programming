@@ -1,4 +1,4 @@
-**C Low-level programming & Algorithm Lecture and exercise**
+**C Low-level programming  Algorithm Lecture and exercise**
 
 Module of Low-level programming and algorithm, carried out during Full Stack Software Engineering studies with ALX.
 
