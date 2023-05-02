@@ -1,7 +1,7 @@
 More singly linked lists Task
 
 Project done during Full Stack Software Engineering studies with ALX.
- It aims to learn about singly linked lists in C low level language.
+It aims to learn about singly linked lists in C low level language.
 
 Technologies
 C files are compiled using webtern container 
