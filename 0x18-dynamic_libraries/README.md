@@ -1,11 +1,19 @@
 **Dynamic libraries**
-![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/6c1e979f-c450-45bb-97de-058de1dba0bd) ![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/9271c692-9586-41fc-b314-7d4d913bdcfb)  ![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/9797b7bb-bce0-4d8d-928e-ff46b878d128)
+
+
+![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/6c1e979f-c450-45bb-97de-058de1dba0bd) 
+
+![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/9271c692-9586-41fc-b314-7d4d913bdcfb) 
+
+![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/9797b7bb-bce0-4d8d-928e-ff46b878d128)
 
 
 
 ***************************************************************************************************************************************
 
-**Project done during Full Stack Software Engineering studies at ALX AFRICA (Holberton School). It aims to learn about dynamic and shared libraries in C language.**![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/663bbce0-999b-4864-8efa-07658f317484)
+**Project done during Full Stack Software Engineering studies at ALX AFRICA (Holberton School). It aims to learn about dynamic and shared libraries in C language.
+
+![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/663bbce0-999b-4864-8efa-07658f317484)
 
 
 
