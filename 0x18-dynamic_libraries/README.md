@@ -5,7 +5,8 @@
 
 ***************************************************************************************************************************************
 
-**Project done during Full Stack Software Engineering studies at ALX AFRICA (Holberton School). It aims to learn about dynamic and shared libraries in C language.** ![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/e629c99c-0659-4fe9-9026-c4d265ce420b)
+**Project done during Full Stack Software Engineering studies at ALX AFRICA (Holberton School). It aims to learn about dynamic and shared libraries in C language.**![image](https://github.com/Michafolab/alx-low_level_programming/assets/117805721/663bbce0-999b-4864-8efa-07658f317484)
+
 
 
 *******************************************************************************************************************************************
