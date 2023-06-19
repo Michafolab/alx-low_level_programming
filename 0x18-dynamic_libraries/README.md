@@ -1,6 +1,8 @@
 Dynamic libraries
 
 
+https://miro.medium.com/v2/resize:fit:1400/1*2fOv3QdTmnRvq8hAYcE0jA.jpeg
+
 ****************************************************************************************************************************************
 
 Project done during Full Stack Software Engineering studies at ALX AFRICA (Holberton School). It aims to learn about dynamic and shared libraries in C language.
